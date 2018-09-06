@@ -1,0 +1,240 @@
+@font-face {
+    font-family: "AvenirNext";
+    src: url("../assets/font/AvenirNext-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Didot";
+    src: url("assets/font/Didot") format("opentype");
+}
+
+html,
+body,
+.row {
+    margin: 0;
+    padding: 0;
+    font-family: AvenirNext;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    color: #202a35;
+    
+}
+
+
+.scroll-body {
+    overflow: hidden;
+}   
+
+.card-div {
+    padding: 2% 0;
+    width: 94%;
+    margin-left: 3%;
+}
+
+.card-slide {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.art-bottom-img {
+    width: 90%;
+    margin-bottom: 10px;
+    margin-left: 5%;
+}
+
+.render-logo {
+    width: 15vw;
+    height: 8vh;
+    margin-left: 4vw;
+    background: red;
+}
+
+.navbar-default {
+    height: 8vh;
+    background: black;
+}
+
+.newnavbar {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    display: flex;
+    top: 0;
+    height: 8vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 1;
+}
+
+.redlogobox {
+    /* position: -webkit-sticky; 
+    position: sticky; */
+    top: 0;
+    height: 8vh;
+    width: 12vw;
+    margin-left: 6vw;
+    background-color: red;
+    display: inline-block;
+}
+
+.newnavbar p {
+    color: white;
+    font-size: 3.5vh;
+    display: inline;
+    vertical-align: 60%;
+    margin-left: 2vw;
+    font-family: 'Didot';
+}
+
+.newnavbar img {
+    color: white;
+    display: inline-flex;
+    margin: 2.4vh 5vw 0 0;
+    float: right;
+    width: 6vw;
+}
+
+.navbar-toggle {
+    border: none;
+    width: 2vw;
+    height: 2vh;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:active,
+.navbar-default .navbar-toggle:focus {
+    border-color: rgb(0, 0, 0);
+    background-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+    color: white !important;
+    margin: 0;
+    margin-left: 17vw;
+    margin-top: 0.7vh;
+    font-size: 3vh;
+}
+
+.main-container {
+    margin-top: 0.5vh;
+}
+
+.panel-body {
+    padding: 0;
+}
+
+.panel-body video {
+    width: 100%;
+}
+
+.panel-content {
+    padding: 10px;
+}
+
+.panel-content p {
+    margin: 5px 0;
+}
+
+.panel-body img {
+    width: 100%;
+}
+
+.panel-body .f-1,
+.panel-body .f-2 {
+    font-family: AvenirNext;
+    font-weight: 600;
+    height: 2em;
+    line-height: 1em;
+    overflow: hidden;
+}
+
+.f-1 {
+    color: #363636;
+}
+
+.f-2 {
+    color: #0094f4;
+}
+
+.mark-block {
+    background: #cb0102;
+    width: 90px;
+    height: 25px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.mark-block p {
+    color: white;
+    margin: 0;
+}
+
+/*Preloader for the mobile screen*/
+.loading {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: black;
+  }
+  .loading svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  #infinity-outline {
+    fill: transparent;
+    stroke-width: 4;
+    stroke: #ff7300;
+    stroke-dasharray: 3px, 300px;
+    stroke-dashoffset: 0;
+    animation: anim 2000ms linear infinite;
+  }
+  
+  #infinity-bg {
+    fill: transparent;
+    stroke-width: 4;
+    stroke: #646464;
+    opacity: 0.2;
+  }
+  
+  @keyframes anim {
+    12.5% {
+      stroke-dasharray: 42px, 300px;
+      stroke-dashoffset: -33px;
+    }
+    43.75% {
+      stroke-dasharray: 105px, 300px;
+      stroke-dashoffset: -105px;
+    }
+    100% {
+      stroke-dasharray: 3px, 300px;
+      stroke-dashoffset: -297px;
+    }
+  }
+
+
+
+  @media (min-width:10px) and (max-width:200px)
+  {
+    .loading .svg
+    {
+        width: 100px;
+        height: 50px;
+    }
+  }

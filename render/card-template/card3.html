@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+
+<div class="col-md-4 card3 best-web">
+    <div class="title">
+        <p ng-if="item.Page=='OrganicLink'">You Might Like</p>
+        <p ng-if="item.Page=='BestOfWeb'">Best of Web</p>
+    </div>
+
+
+    <swiper loop='false' effect='coverflow' initialSlide='4'>
+        <slides>
+            <slide  ng-repeat="sub_item in CardItems[item.Page]">
+                <div class="col-md-4 card2 best-web card-body">
+                    <div class="image-area">
+                        <img src="./../assets/imgs/{{item.Page}}/{{item.Page}}-0{{$index + 1}}.png" alt="">
+                        <div class="gradient-overlay"></div>
+                        <div class="controls">
+                            <button type="button" class="btn btn-lg o-v-btn pull-left" ng-show="sub_item.Time">
+                                <img src="../assets/ico/icon-play@1x.png" alt="">
+                            </button>
+                            <span class="time-left" ng-show="sub_item.Time">{{sub_item.Time}}</span>
+                            <button type="button" class="btn o-v-btn upload pull-right">
+                                <img src="../assets/ico/icon-share@1x.png" alt="">
+                            </button>
+                            <button type="button" class="btn o-v-btn bookmark pull-right">
+                                <img src="../assets/ico/icon-bookmark@1x.png" alt="">
+                            </button>
+                            <button type="button" class="btn o-v-btn like pull-right">
+                                <img src="../assets/ico/icon-like@1x.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mask">
+                        <button type="button" class="mask-button pull-left" ng-class="{'background-news': item.Page=='OrganicLink' || item.Page=='OrganicVideo'}" ng-if="item.Page=='OrganicLink'">{{sub_item.Logo}}</button>
+                        <img src="../assets/imgs/{{item.Page}}/{{sub_item.Logo}}" alt="" class="pull-left" style="height: 30px !important;" ng-if="item.Page=='BestOfWeb'">
+                        <img src="../assets/info.png" class="img">
+                    </div>
+                    <div class="content-body">
+                        <p class="first">
+                            {{sub_item.content}}
+                            <font style="color: #7d91a9; font-style: italic;" ng-show="sub_item.content4 == '1'"><span>&#183;</span> sponsored</font>
+                        </p>
+                        <p class="second">{{sub_item.content2}}
+                            <font style="color: #019ef5;">{{sub_item.content3}}</font>
+                        </p>
+                    </div>
+                </div>
+            </slide>
+        </slides>
+        <!-- <prev></prev>
+        <next></next> -->
+        <pagination></pagination>
+    </swiper>
+</div>
+
+<link rel="stylesheet" href="card-template/font.css">
+<link rel="stylesheet" href="card-template/card-template.css">
+

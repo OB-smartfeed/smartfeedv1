@@ -1,0 +1,411 @@
+
+@media (min-width:1280px) and (max-width: 1439px) {
+    .item {
+        padding: 5%;
+    }
+    .card-item {
+        min-width: 205px;
+        min-height: 105px;
+        margin: 0 10.4px 10px 10.4px;
+    }
+    .card-markplace h1 {
+        font-size: 26px;
+        margin: 31px 0 0 29.5px;
+    }
+    .card-markplace .sortable-row {
+        margin-left: 25px;
+        margin-top: 18.9px;
+    }
+    .middle-header {
+        margin: 25.5px 24.2px 0 26.1px;
+    }
+    .middle-icon {
+        margin: 0;
+    }
+    .middle-item .m-ico-1 {
+        margin-right: 0;
+    }
+    .middle-place .btn-primary {
+        width: 95px;
+        height: 31.9px;
+        border-radius: 4.3px;
+        background-color: #5e9be4;
+        background-color: var(--soft-blue);
+        border: solid 0.6px #5e9be4;
+        border: solid 0.6px var(--soft-blue);
+        padding: 0;
+        -webkit-border-radius: 4.3px;
+        -moz-border-radius: 4.3px;
+        -ms-border-radius: 4.3px;
+        -o-border-radius: 4.3px;
+        font-size: 18px;
+    }
+    .middle-place .reset-btn {
+        width: 43.6px;
+        height: 32.2px;
+        border-radius: 4.3px;
+        background-color: #ffffff;
+        border: solid 0.6px #5e9be4;
+        border: solid 0.6px var(--soft-blue);
+        -webkit-border-radius: 4.3px;
+        -moz-border-radius: 4.3px;
+        -ms-border-radius: 4.3px;
+        -o-border-radius: 4.3px;
+    }
+    .middle-place .sortable-row {
+        margin-left: 26.1px;
+        margin-right: 5.8px;
+        padding-right: 10.7px;
+    }
+    .mobile-device {
+        width: 320px;
+        height: 600px;
+    }
+    .mobile-device iframe {
+        width: 272.5px;
+        height: 487.3px;
+        margin-top: 58px;
+        margin-left: 23px;
+    }
+    .m-ico-1 svg {
+        height: 17px;
+        width: 17px;
+        margin-top: 5px;
+    }
+    .reset-icon {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media (min-width:1200px) and (max-width: 1279px) {
+    .mobile-device {
+        width: 360px;
+        height: 685px;
+    }
+    .mobile-device iframe {
+        width: 311.8px;
+        height: 554.6px;
+        margin-top: 67px;
+        margin-left: 24px;
+    }
+    .m-ico-1 svg {
+        height: 16px;
+    }
+    .middle-icon {
+        width: 21px;
+        height: 21px;
+    }
+    .middle-item .m-ico-2 svg,
+    .as-sortable-placeholder .m-ico-2 svg {
+        width: 21px;
+        height: 21px;
+    }
+    .middle-item .m-ico-1,
+    .middle-item .m-ico-2 {
+        margin-right: 7px;
+    }
+    .middle-item .m-ico-1 {
+        margin-left: 5px;
+    }
+    .c-me {
+        margin: 13px 0 0 3px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1199px) {
+    .card-markplace h1 {
+        font-size: 20px;
+        margin: 30px 0 0 24px;
+    }
+    .card-item {
+        min-width: 120px;
+        min-height: 85px;
+        margin: 0px 7px 15px 7px;
+    }
+    .md-title label,
+    .middle-item p {
+        font-size: 11px;
+    }
+    .md-title svg {
+        height: 10px;
+    }
+    .middle-header {
+        margin: 20px 8px 0 8px;
+        padding-bottom: 10px;
+        border-bottom: solid 2px #797979;
+    }
+    .middle-place .btn {
+        height: 25px;
+        padding: 0 5px;
+    }
+    .reset-icon {
+        width: 15px;
+        height: 15px;
+    }
+    .reset-btn {
+        line-height: 0.428571;
+    }
+    .middle-place .btn-primary {
+        width: 65px;
+        font-size: 12px;
+        font-weight: 600;
+        background: #5e9be4 !important;
+    }
+    .middle-place .sortable-row {
+        height: 82vh;
+        overflow-y: scroll;
+        margin-right: 3px;
+        margin-left: 7px;
+        padding-right: 0px;
+    }
+    .middle-item {
+        padding: 10px 0;
+    }
+    .middle-item .m-ico-2 svg,
+    .as-sortable-placeholder .m-ico-2 svg {
+        width: 20px;
+        height: 20px;
+    }
+    .middle-place .middle-place-holder .m-ico-2 svg,
+    .as-sortable-placeholder .m-ico-2 svg {
+        margin-left: 47%;
+    }
+    .middle-item .m-ico-1 {
+        margin-right: 0px;
+    }
+    .m-ico-1 svg {
+        height: 15px;
+    }
+    .middle-place .sortable-row::-webkit-scrollbar {
+        width: 5px;
+        border-radius: 5px;
+        padding: 10px 0;
+    }
+    .mobile-device {
+        width: 240px;
+        height: 460px;
+    }
+    .mobile-device iframe {
+        width: 208.8px;
+        height: 372.6px;
+        margin-top: 45px;
+        margin-left: 16px;
+    }
+    .panel-heading {
+        padding: 5px 15px 5px 6px;
+    }
+    .card-item .panel-body {
+        padding: 0px 10px 10px 10px;
+    }
+}
+
+
+
+@media screen and (min-width: 1601px) and (max-width: 1919px) {
+    .card-item {
+        min-width: 250px;
+        min-height: 160px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .md-title label,
+    .middle-item p {
+        font-size: 16px;
+    }
+    .md-title svg {
+        height: 18px;
+        padding-top: 5px;
+    }
+    .m-ico-1 svg {
+        height: 25px
+    }
+    .middle-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+/*card-item*/
+
+@media (max-width: 1439px) {
+    .card-item {
+        min-width: 185px;
+        min-height: 125px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************************************/
+/* Screen Size from 2560px and 2879px */
+/* Status: Ongoing */
+@media (min-width:1920px) and (max-width: 2559px) {
+
+    /* Top Bar and Icon*/ 
+    .navbar {
+        min-height: 70px;
+    }
+    .ico-logo {
+        width: 145px;
+        height: 26px;
+        margin: 21px 0 0 35px;
+    }
+
+    /* Card Marketplace */
+    .item {
+        padding: 5%;
+        height: 110px;
+    }
+    .card-item {
+        min-width: 287px;
+        min-height: 190px;
+        margin: 0 15px 28px 15px;
+    }
+    .panel-heading {
+        font-size: 0px;
+        padding: 20px 0px 10px 15px;
+    }
+    .card-item .panel-body {
+        padding: 0px 17px 0px 17px;
+    }
+    .item img {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .card-markplace .sortable-row {
+        align-content: center;
+        padding: 28px 0px 20px 77px;
+    }
+
+
+    /* Headings in Marketplace column */
+    .card-markplace h1 {
+        font-size: 32px;
+        margin: 68px 0 0 93px;
+    }
+    .card-markplace h2 {
+        font-size: 20px;
+        margin: 3px 0 0 93px;
+    }
+
+    /* Headings in Middle (editor) column */
+    .middle-place h1 {
+        font-size: 32px;
+        margin: 68px 0 0 40px;
+    }
+    .middle-place h2 {
+        font-size: 20px;
+        margin: 3px 0 0 40px;
+    }
+
+
+   
+    /* The Editor */
+    .middle-header {
+        margin: 28px 40px 0 40px;
+        padding-bottom: 20px;
+        border-bottom: solid 3px #797979;
+    }
+    .middle-place .btn-primary {
+        width: 150px;
+        height: 50px;
+        border-radius: 4.8px;
+        background-color: #5e9be4;
+        background-color: var(--soft-blue);
+        border: solid 0.6px #5e9be4;
+        border: solid 0.6px var(--soft-blue);
+        font-size: 23px;
+    }
+    .reset-icon {
+        height: 35px;
+        width: 35px;
+    }
+    .middle-place .reset-btn {
+        width: 68px;
+        height: 50px;
+        border-radius: 4.8px;
+        background-color: #ffffff;
+        border: solid 0.6px #5e9be4;
+        border: solid 0.6px var(--soft-blue);
+    }
+    .middle-place .sortable-row {
+        margin: 5px 0px 10px 40px;
+        padding-right: 30px;
+    }
+    
+    .mobile-device iframe {
+        width: 341.1px;
+        height: 608.1px;
+        margin-top: 74px;
+        margin-left: 26px;
+    }
+    .middle-item .m-ico-1 {
+        margin-right: 12px;
+        padding-top: 3px;
+    }
+    .middle-item .m-ico-2 {
+        margin-top: 0px;
+        margin-left: -10px;
+    }
+    .middle-item .m-ico-2 svg {
+        width: 40px;
+        height: 40px;
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .middle-item {
+        margin: 15px 0;
+        min-height: 100px;
+        height: auto;
+    }
+    .middle-item p {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+    /* Third Column */
+    .mobile-device {
+        margin-top: 20px;
+        width: 460;
+        height: 881px;
+    }
+    .mobile-device iframe {
+        width: 387px;
+        height: 690px;
+        margin-top: 98px;
+        margin-left: 29px;
+    }
+   
+    
+
+}
+
+#wowslider-container1.ws_gestures {
+    display: none;
+}
+/* ************************************************************ */
+
+
+
+
+
+@media (min-width:768px) {
+    .col-21,
+    .col-39 {
+        float: left;
+    }
+}

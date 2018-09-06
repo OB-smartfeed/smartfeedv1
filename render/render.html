@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="myRender">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="assets/favor.png" />
+    <title>Outbrain</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../libs/bootstrap.min.css">
+    <link rel="stylesheet" href="../libs/swiper/angular-ui-swiper.css" />
+    <script type="text/javascript" src="../libs/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../libs/angular-sqlite.js"></script>
+    <script src="../libs/swiper/angular-ui-swiper.js"></script>
+    <link rel="stylesheet" href="render.css" />
+    <script src="render.js"></script>
+</head>
+
+<body ng-controller="myRenderCtrl" ng-class="{'scroll-body': !showItems.length}">
+        <div class="loading">
+                <svg viewBox="0 0 187.3 93.7" preserveAspectRatio="xMidYMid meet">
+                  <path id="infinity-outline" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
+                        d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+                  <path id="infinity-bg" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
+                        d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+                </svg>
+        </div>
+
+ 
+    <header class="newnavbar" style="display:none;">
+        <div class="redlogobox">   
+        </div>
+        <p>Style</p>
+        <img src="menu.png"/></header>
+    </header>
+
+    
+    <div class="row main-container" style="display:none;">
+        <!-- <img src="../assets/art.png" alt="" style="width: 94%; margin-left: 3%;"> -->
+        <img src="../assets/article.gif" alt="" style="width: 94%; margin-left: 3%;">
+        <!-- <img src="../assets/art-bottom.png" alt="" style="width: 94%; margin-left: 3%;"> -->
+   
+        <div class="card-div" ng-if="showItems.length > 1"><img src="../assets/art-bottom.png" alt="" style="width: 100%; margin-left: 0%;"> </div>
+        <div class="card-div" ng-repeat="item in showItems" ng-if="item.Id != 9">
+            <div ng-include="'card-template/card.html'" ng-if="item.Page!='Comments' && item.Page!='Subscriptions' && item.Page!='BestOfWeb' && item.Page!='OrganicLink'"></div>
+            <div ng-include="'card-template/card2.html'" ng-if="item.Page=='Comments' || item.Page=='Subscriptions'"></div>
+            <div ng-include="'card-template/card3.html'" ng-if="item.Page=='BestOfWeb' || item.Page=='OrganicLink'"></div>
+        </div>
+    </div>
+</body>
+
+
+<script>
+    jQuery(function($){
+        setTimeout(function() {
+        $('.loading').hide();
+    }, 2000);
+    
+     setTimeout(
+      function()
+      { 
+      jQuery('.newnavbar').css("display", "block"); 
+      jQuery('.row').css("display", "block"); 
+       }, 2000);
+     });
+    </script>
+
+</html>

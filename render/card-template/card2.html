@@ -1,0 +1,22 @@
+<div class="col-md-4 card2">
+    <div class="subscribe comment-header row">
+        <div class="col-xs-3 c-mask">
+            <img src="../assets/imgs/{{item.Page}}/{{CardItems[item.Page][item.Order].Logo}}" alt="">
+        </div>
+        <div class="col-xs-9 c-me">
+            <p class="title"><strong style="color: #019ef5">{{CardItems[item.Page][item.Order].content}}</strong></p>
+            <p class="desc">
+                {{CardItems[item.Page][item.Order].content2}}
+                <font style="color: #019ef5;">{{CardItems[item.Page][item.Order].content3}}</font>
+            </p>
+        </div>
+    </div>
+    <div class="subscribe image-area">
+        <img src="../assets/imgs/{{item.Page}}/{{item.Page}}-0{{item.Order + 1}}.png" alt="">
+        <div class="controls" ng-class="{'active': item.Page=='Subscriptions'}">
+            <button type="button" class="btn btn-primary"> {{CardItems[item.Page][item.Order].content4}} </button>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="card-template/font.css">
+<link rel="stylesheet" href="card-template/card-template.css">
